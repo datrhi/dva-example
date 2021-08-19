@@ -1,2 +1,12 @@
 # dva-example
-state management with dvajs
+simple example with dvaJs
+
+##Install
+
+### `npm i`
+
+Install package\
+
+### `npm start`
+
+Runs the app in the development mode.\

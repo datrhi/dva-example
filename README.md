@@ -1,12 +1,12 @@
 # dva-example
 simple example with dvaJs
 
-##Install
+## Run locally
 
 ### `npm i`
 
-Install package\
+Install package.
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Run the app in the development mode.

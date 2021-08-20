@@ -5,10 +5,10 @@ export default {
     user: {},
   },
   reducers: {
-    login(state, { payload: { username, password } }) {
-      if (username === "") {
+    login(state, { payload: { username } }) {
+      if (username !== "") {
         localStorage.setItem("access_token", "test");
-        localStorage.setItem("user", "test");
+        localStorage.setItem("user", username);
         return {
           ...state,
           isAuthenticated: true,
@@ -31,7 +31,7 @@ export default {
     },
     checkLogin(state) {
       if (localStorage["access_token"]) {
-        // console.log(localStorage.getItem("user")); 
+        // console.log(localStorage.getItem("user"));
         return {
           ...state,
           isAuthenticated: true,
